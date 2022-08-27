@@ -1,3 +1,3 @@
 
 # cst495 
-*iOS Devdelopment*
+*iOS Development*
