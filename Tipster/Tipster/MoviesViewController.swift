@@ -26,52 +26,73 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
-             // This will run when the network request returns
-             if let error = error {
-                    print(error.localizedDescription)
-             } else if let data = data {
-                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                 
-                 self.movies = dataDictionary["results"] as! [[String:Any]]
-                 
-                 self.tableView.reloadData()
-                 
-                 print(dataDictionary)
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
-                    // TODO: Reload your table view data
-                    
-             }
+            // This will run when the network request returns
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let data = data {
+                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                
+                self.movies = dataDictionary["results"] as! [[String:Any]]
+                
+                self.tableView.reloadData()
+                
+                print(dataDictionary)
+                // TODO: Get the array of movies
+                // TODO: Store the movies in a property to use elsewhere
+                // TODO: Reload your table view data
+                
+            }
         }
         task.resume()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) ->
-        Int {
+    Int {
         return movies.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
-        UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+    UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         
         let movie = movies[indexPath.row]
-            
+        
         let title = movie["title"] as! String
-            
+        
         let synopsis = movie["overview"] as! String
         
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
-            
+        
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
         
         let posterUrl = URL(string: baseUrl + posterPath)
-            
+        
         cell.posterView.af.setImage(withURL: posterUrl!)
-            
+        
         return cell
+    }
+    
+    override func prepare (for segue:
+                           UIStoryboardSegue, sender: Any?) {
+        print("Lodaing up the details screen")
+        
+        // Find the selected movie
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // Pass selectd movie to details view controller
+        
+        let detailsViewController =
+            segue.destination as!
+            MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
 
 
