@@ -41,7 +41,7 @@ and the proper manner of having the grid of movie posters appear as 3 columns
 
 ### App Walkthrough GIF
 
-<img src="http://g.recordit.co/3mHn5sqR7X.gif" width=250><br>
+<img src="http://g.recordit.co/TqoJjfYgLJ.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app:
