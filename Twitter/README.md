@@ -27,7 +27,7 @@ Required Features Video Walkthrough - User Login/Logout:
 
 <img src='http://g.recordit.co/nb8KYnGbND.gif' title='Required Features Video Walkthrough - User Login/Logout' width='' alt='Video Walkthrough' />
 
-Required Features Video Walkthrough - User stays logged in across restarts/User can view tweets with the user profile picture, username, and tweet text:
+Required Features Video Walkthrough - User stays logged in/view tweets:
 <img src='http://g.recordit.co/SQqhwJJ39O.gif' title='Required Features Video Walkthrough - User stays logged in across restarts/User can view tweets with the user profile picture, username, and tweet text' width='' alt='Video Walkthrough' />
 
 Bonus Features Video Walkthrough - Pull to Refresh/Inifinite Scroll:
