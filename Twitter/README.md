@@ -23,9 +23,13 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+Required Features Video Walkthrough - User Login/Logout:
+
 <img src='http://g.recordit.co/nb8KYnGbND.gif' title='Required Features Video Walkthrough - User Login/Logout' width='' alt='Video Walkthrough' />
 
+Required Features Video Walkthrough - User stays logged in across restarts/User can view tweets with the user profile picture, username, and tweet text:
 <img src='http://g.recordit.co/SQqhwJJ39O.gif' title='Required Features Video Walkthrough - User stays logged in across restarts/User can view tweets with the user profile picture, username, and tweet text' width='' alt='Video Walkthrough' />
 
+Bonus Features Video Walkthrough - Pull to Refresh/Inifinite Scroll:
 <img src='http://g.recordit.co/lKpp1fwJiW.gif' title='Bonus Features Video Walkthrough - Pull to Refresh/Inifinite Scroll' width='' alt='Video Walkthrough' />
 
