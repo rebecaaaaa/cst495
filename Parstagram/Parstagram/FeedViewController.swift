@@ -42,7 +42,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return posts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -54,7 +54,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let user = post["author"] as! PFUser
         cell.usernameLabel.text = user.username
         
-        cell.captionLabel.text = post["caption"] as! String
+        cell.captionLabel.text = (post["caption"] as! String)
         
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
