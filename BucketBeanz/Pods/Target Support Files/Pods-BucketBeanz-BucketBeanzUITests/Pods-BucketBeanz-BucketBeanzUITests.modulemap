@@ -1,0 +1,6 @@
+framework module Pods_BucketBeanz_BucketBeanzUITests {
+  umbrella header "Pods-BucketBeanz-BucketBeanzUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
