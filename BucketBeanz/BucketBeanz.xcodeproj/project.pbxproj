@@ -17,6 +17,8 @@
 		B740FC1E291B1FDD00E58C78 /* BucketBeanzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FC1D291B1FDD00E58C78 /* BucketBeanzUITests.swift */; };
 		B740FC20291B1FDD00E58C78 /* BucketBeanzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FC1F291B1FDD00E58C78 /* BucketBeanzUITestsLaunchTests.swift */; };
 		B740FC2D291B248500E58C78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FC2C291B248500E58C78 /* LoginViewController.swift */; };
+		B74F4B72294036A300BBA938 /* CreateBucketBeanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F4B71294036A300BBA938 /* CreateBucketBeanViewController.swift */; };
+		B74F4B7429403B9500BBA938 /* MyBucketBeanzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F4B7329403B9500BBA938 /* MyBucketBeanzViewController.swift */; };
 		B76ADE18291DB97A00E23F03 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ADE17291DB97A00E23F03 /* FeedViewController.swift */; };
 		C268FA5CDC6FD9719622A6C5 /* Pods_BucketBeanz_BucketBeanzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B231BC0AF278266983E90CA3 /* Pods_BucketBeanz_BucketBeanzUITests.framework */; };
 		DC162F4E6C65E947D7EE5DBC /* Pods_BucketBeanzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7687F90BB87E938CCE0FC4DB /* Pods_BucketBeanzTests.framework */; };
@@ -58,6 +60,8 @@
 		B740FC1D291B1FDD00E58C78 /* BucketBeanzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketBeanzUITests.swift; sourceTree = "<group>"; };
 		B740FC1F291B1FDD00E58C78 /* BucketBeanzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketBeanzUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B740FC2C291B248500E58C78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B74F4B71294036A300BBA938 /* CreateBucketBeanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBucketBeanViewController.swift; sourceTree = "<group>"; };
+		B74F4B7329403B9500BBA938 /* MyBucketBeanzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBucketBeanzViewController.swift; sourceTree = "<group>"; };
 		B76ADE17291DB97A00E23F03 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		B901A5E52626A4DC98A1B8BD /* Pods-BucketBeanz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketBeanz.debug.xcconfig"; path = "Target Support Files/Pods-BucketBeanz/Pods-BucketBeanz.debug.xcconfig"; sourceTree = "<group>"; };
 		C344353B8CD5745AF7F80D7C /* Pods-BucketBeanz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketBeanz.release.xcconfig"; path = "Target Support Files/Pods-BucketBeanz/Pods-BucketBeanz.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				B740FC0A291B1FDD00E58C78 /* Info.plist */,
 				B740FC2C291B248500E58C78 /* LoginViewController.swift */,
 				B76ADE17291DB97A00E23F03 /* FeedViewController.swift */,
+				B74F4B71294036A300BBA938 /* CreateBucketBeanViewController.swift */,
+				B74F4B7329403B9500BBA938 /* MyBucketBeanzViewController.swift */,
 			);
 			path = BucketBeanz;
 			sourceTree = "<group>";
@@ -429,6 +435,8 @@
 			files = (
 				B740FC2D291B248500E58C78 /* LoginViewController.swift in Sources */,
 				B740FBFD291B1FDB00E58C78 /* AppDelegate.swift in Sources */,
+				B74F4B72294036A300BBA938 /* CreateBucketBeanViewController.swift in Sources */,
+				B74F4B7429403B9500BBA938 /* MyBucketBeanzViewController.swift in Sources */,
 				B76ADE18291DB97A00E23F03 /* FeedViewController.swift in Sources */,
 				B740FBFF291B1FDB00E58C78 /* SceneDelegate.swift in Sources */,
 			);
