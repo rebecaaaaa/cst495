@@ -105,7 +105,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="MyBucketBeanz"/>
                                 <connections>
-                                    <segue destination="ZW6-Wq-CNe" kind="presentation" id="VGg-pz-DtT"/>
+                                    <segue destination="ZW6-Wq-CNe" kind="presentation" id="1pH-t8-9iS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -179,13 +179,78 @@
                     <view key="view" contentMode="scaleToFill" id="a6V-OG-62T">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyBucketBeanz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXM-6E-EQI">
+                                <rect key="frame" x="133" y="64" width="124" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M88-8g-xu0">
+                                <rect key="frame" x="290" y="12" width="93" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Item"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1e-zB-sLn">
+                                <rect key="frame" x="16" y="12" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Edit Item"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cSO-h5-Ah4">
+                                <rect key="frame" x="0.0" y="93" width="390" height="635"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checked cell" rowHeight="71" id="rIF-Na-D85" customClass="CheckTableViewCell" customModule="BucketBeanz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rIF-Na-D85" id="Vs6-kB-ZJC">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qd-WS-Bcw">
+                                                    <rect key="frame" x="20" y="11" width="42" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKO-V3-zqP" customClass="Checkbox" customModule="BucketBeanz" customModuleProvider="target">
+                                                    <rect key="frame" x="321" y="11" width="49" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <connections>
+                                                        <action selector="checkChanged:" destination="ZW6-Wq-CNe" eventType="valueChanged" id="7zP-GR-sPP"/>
+                                                        <action selector="checked:" destination="rIF-Na-D85" eventType="valueChanged" id="aNz-HP-qH4"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6Qd-WS-Bcw" secondAttribute="bottom" id="0dy-jg-t4X"/>
+                                                <constraint firstItem="6Qd-WS-Bcw" firstAttribute="top" secondItem="Vs6-kB-ZJC" secondAttribute="topMargin" id="bt5-3J-HZh"/>
+                                                <constraint firstItem="6Qd-WS-Bcw" firstAttribute="leading" secondItem="Vs6-kB-ZJC" secondAttribute="leadingMargin" id="uYH-3h-zPx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="checkbox" destination="cKO-V3-zqP" id="tpj-Je-1D8"/>
+                                            <outlet property="label" destination="6Qd-WS-Bcw" id="yIC-T9-Gnu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JFh-EI-USf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="cSO-h5-Ah4" id="g59-SS-D7l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtE-uJ-fJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931" y="379"/>
+            <point key="canvasLocation" x="1930.7692307692307" y="378.90995260663504"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mCf-ig-n1q">
