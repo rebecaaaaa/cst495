@@ -23,6 +23,7 @@
 		B740FC2D291B248500E58C78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FC2C291B248500E58C78 /* LoginViewController.swift */; };
 		B74F4B72294036A300BBA938 /* CreateBucketBeanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F4B71294036A300BBA938 /* CreateBucketBeanViewController.swift */; };
 		B76ADE18291DB97A00E23F03 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ADE17291DB97A00E23F03 /* FeedViewController.swift */; };
+		B7AE44DF2941CD4F002AAD7E /* CompletedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE44DE2941CD4F002AAD7E /* CompletedItemsViewController.swift */; };
 		B7C4DFF42941967000E36DC5 /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4DFF32941967000E36DC5 /* CheckTableViewCell.swift */; };
 		C268FA5CDC6FD9719622A6C5 /* Pods_BucketBeanz_BucketBeanzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B231BC0AF278266983E90CA3 /* Pods_BucketBeanz_BucketBeanzUITests.framework */; };
 		DC162F4E6C65E947D7EE5DBC /* Pods_BucketBeanzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7687F90BB87E938CCE0FC4DB /* Pods_BucketBeanzTests.framework */; };
@@ -70,6 +71,7 @@
 		B740FC2C291B248500E58C78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B74F4B71294036A300BBA938 /* CreateBucketBeanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBucketBeanViewController.swift; sourceTree = "<group>"; };
 		B76ADE17291DB97A00E23F03 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		B7AE44DE2941CD4F002AAD7E /* CompletedItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedItemsViewController.swift; sourceTree = "<group>"; };
 		B7C4DFF32941967000E36DC5 /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
 		B901A5E52626A4DC98A1B8BD /* Pods-BucketBeanz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketBeanz.debug.xcconfig"; path = "Target Support Files/Pods-BucketBeanz/Pods-BucketBeanz.debug.xcconfig"; sourceTree = "<group>"; };
 		C344353B8CD5745AF7F80D7C /* Pods-BucketBeanz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketBeanz.release.xcconfig"; path = "Target Support Files/Pods-BucketBeanz/Pods-BucketBeanz.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				B72051322941868000F2C987 /* MyBucketBeanzViewController.swift */,
 				B720513429418F8100F2C987 /* Checkbox.swift */,
 				B7C4DFF32941967000E36DC5 /* CheckTableViewCell.swift */,
+				B7AE44DE2941CD4F002AAD7E /* CompletedItemsViewController.swift */,
 			);
 			path = BucketBeanz;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				B72051332941868000F2C987 /* MyBucketBeanzViewController.swift in Sources */,
 				B740FBFF291B1FDB00E58C78 /* SceneDelegate.swift in Sources */,
 				B7205131294185C700F2C987 /* CompletedItems.swift in Sources */,
+				B7AE44DF2941CD4F002AAD7E /* CompletedItemsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

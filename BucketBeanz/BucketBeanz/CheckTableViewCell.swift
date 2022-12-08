@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CheckTableViewCellDelegate: AnyObject {
-  func checkTableViewCell(_ cell: CheckTableViewCell, didChagneCheckedState checked: Bool)
+  func checkTableViewCell(_ cell: CheckTableViewCell, didChangeCheckedState checked: Bool)
 }
 
 class CheckTableViewCell: UITableViewCell {
@@ -21,7 +21,7 @@ class CheckTableViewCell: UITableViewCell {
     
     @IBAction func checked(_ sender: Checkbox) {
         updateChecked()
-        delegate?.checkTableViewCell(self, didChagneCheckedState: checkbox.checked)
+        delegate?.checkTableViewCell(self, didChangeCheckedState: checkbox.checked)
     }
     
     func set(title: String, checked: Bool) {

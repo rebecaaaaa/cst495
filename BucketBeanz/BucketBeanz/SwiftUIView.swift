@@ -9,11 +9,11 @@ import SwiftUI
 
 struct SwiftUIView: View {
     
-    @State var items: [String] = [
+    @State var items0: [String] = [
      "Visit Paris", "Visit London", "Visit Mumbai"
     ]
     
-    @State var items0: [String] = [
+    @State var items1: [String] = [
         "Graduate College", "Get my License", "Receive Job Offer"
     ]
     var body: some View {
@@ -28,7 +28,7 @@ struct SwiftUIView: View {
                         .font(.headline)
                         .foregroundColor(.orange)
                 ) {
-                    ForEach(items, id: \.self) {items in Text(items.capitalized)
+                    ForEach(items0, id: \.self) {items in Text(items.capitalized)
                             .font(.caption)
                             .foregroundColor(.white)
                             .padding(.vertical)
@@ -39,7 +39,7 @@ struct SwiftUIView: View {
                 }
                 
                 Section(header: Text("Lifestyle")) {
-                    ForEach(items0, id: \.self) { items0 in
+                    ForEach(items1, id: \.self) { items0 in
                         Text(items0.capitalized)
                     }
                 }
@@ -61,15 +61,15 @@ struct SwiftUIView: View {
     }
     
     func delete(indexSet: IndexSet) {
-        items.remove(atOffsets: indexSet)
+        items0.remove(atOffsets: indexSet)
     }
     
     func move(indeces:IndexSet, newOffset: Int) {
-        items.move(fromOffsets: indeces, toOffset: newOffset)
+        items0.move(fromOffsets: indeces, toOffset: newOffset)
     }
     
     func add() {
-        items.append("Visit San Francisco")
+        items0.append("Visit San Francisco")
     }
 }
 

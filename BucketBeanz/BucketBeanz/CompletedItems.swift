@@ -4,7 +4,7 @@
 //
 //  Created by Rebeca Chavez on 12/7/22.
 //
-
+//
 import Foundation
 
 struct CompletedItems {
@@ -17,6 +17,6 @@ struct CompletedItems {
      }
      
      func completeToggled() -> CompletedItems {
-       return CompletedItems (title: title, isComplete: !isComplete)
+       return CompletedItems(title: title, isComplete: !isComplete)
      }
 }

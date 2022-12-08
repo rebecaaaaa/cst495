@@ -192,12 +192,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add Item"/>
+                                <connections>
+                                    <segue destination="ksF-ge-Ffx" kind="presentation" id="nTP-rd-i7H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1e-zB-sLn">
                                 <rect key="frame" x="16" y="12" width="91" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Edit Item"/>
+                                <connections>
+                                    <action selector="startEditing:" destination="ZW6-Wq-CNe" eventType="touchUpInside" id="lEs-4j-pEG"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cSO-h5-Ah4">
                                 <rect key="frame" x="0.0" y="93" width="390" height="635"/>
@@ -236,9 +242,13 @@
                                         <connections>
                                             <outlet property="checkbox" destination="cKO-V3-zqP" id="tpj-Je-1D8"/>
                                             <outlet property="label" destination="6Qd-WS-Bcw" id="yIC-T9-Gnu"/>
+                                            <segue destination="ksF-ge-Ffx" kind="presentation" destinationCreationSelector="completed_itemsVIewController:" id="ei0-xP-EXB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="ZW6-Wq-CNe" id="Ldd-Tz-1k7"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JFh-EI-USf"/>
@@ -251,6 +261,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtE-uJ-fJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1930.7692307692307" y="378.90995260663504"/>
+        </scene>
+        <!--Completed Items View Controller-->
+        <scene sceneID="3az-xF-YYs">
+            <objects>
+                <viewController id="ksF-ge-Ffx" customClass="CompletedItemsViewController" customModule="BucketBeanz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rv6-DR-gHY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHk-YC-KOf">
+                                <rect key="frame" x="16" y="186" width="358" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP4-F0-mgx">
+                                <rect key="frame" x="271" y="47" width="103" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save Edits"/>
+                                <connections>
+                                    <action selector="save:" destination="ksF-ge-Ffx" eventType="touchUpInside" id="HUY-Dx-n9D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BUs-b8-Amm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="WHk-YC-KOf" id="81r-ma-gY3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="234-hk-NWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2776.9230769230767" y="378.90995260663504"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mCf-ig-n1q">
@@ -271,6 +316,9 @@
             <point key="canvasLocation" x="249" y="-17"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ei0-xP-EXB"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="cool" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
