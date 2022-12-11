@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func onSignUp(_ sender: Any) {
         
-        print("Clicked on Sign Up")
+        print("Clicked on Create Account")
         
         let user = PFUser()
         

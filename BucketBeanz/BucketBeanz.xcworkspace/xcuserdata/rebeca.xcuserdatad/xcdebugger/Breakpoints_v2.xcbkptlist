@@ -3,4 +3,99 @@
    uuid = "5A34E3E6-1EE3-4738-9183-681112A74760"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BF2A66E-DBEA-4F5B-B379-0735AD483F00"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BucketBeanz/HomePageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "2BF2A66E-DBEA-4F5B-B379-0735AD483F00 - 273b6eb52019056d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BucketBeanz.HomePageViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BucketBeanz.HomePageViewController"
+                  moduleName = "BucketBeanz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rebeca/Desktop/cst495/BucketBeanz/BucketBeanz/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "2BF2A66E-DBEA-4F5B-B379-0735AD483F00 - a9151de30d2fff87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BucketBeanz.HomePageViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BucketBeanz.HomePageViewController"
+                  moduleName = "BucketBeanz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rebeca/Desktop/cst495/BucketBeanz/BucketBeanz/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "2BF2A66E-DBEA-4F5B-B379-0735AD483F00 - fdff1eb39edc4565"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BucketBeanz.HomePageViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BucketBeanz.HomePageViewController&gt;"
+                  moduleName = "BucketBeanz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rebeca/Desktop/cst495/BucketBeanz/BucketBeanz/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "2BF2A66E-DBEA-4F5B-B379-0735AD483F00 - 1d71cd97d99fec3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BucketBeanz.HomePageViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BucketBeanz.HomePageViewController&gt;"
+                  moduleName = "BucketBeanz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rebeca/Desktop/cst495/BucketBeanz/BucketBeanz/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "81">
+               </Location>
+               <Location
+                  uuid = "2BF2A66E-DBEA-4F5B-B379-0735AD483F00 - d3dbbc85b83e30fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BucketBeanz.HomePageViewController.__deallocating_deinit"
+                  moduleName = "BucketBeanz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rebeca/Desktop/cst495/BucketBeanz/BucketBeanz/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

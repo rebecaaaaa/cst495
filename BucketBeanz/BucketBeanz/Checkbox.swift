@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 @IBDesignable
 class Checkbox: UIControl {

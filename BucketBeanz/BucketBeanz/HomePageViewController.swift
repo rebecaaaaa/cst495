@@ -9,39 +9,53 @@ import UIKit
 import Parse
 
 class HomePageViewController: UIViewController {
-  
-  var todos = [
-    List(title: "Visit Paris."),
-    List(title: "Graduate college."),
-    List(title: "Receive job offer."),
-  ]
-
-  @IBOutlet weak var tableView: UITableView!
     
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
-  }
-
-  @IBAction func startEditing(_ sender: Any) {
-    tableView.isEditing = !tableView.isEditing
-  }
-  
-  @IBSegueAction func todoViewcontroller(_ coder: NSCoder) -> ListViewController? {
-    let vc = ListViewController(coder: coder)
+    var todos = [
+        List(title: "Visit Paris."),
+        List(title: "Graduate college."),
+        List(title: "Receive job offer."),
+    ]
     
-    if let indexpath = tableView.indexPathForSelectedRow {
-      let todo = todos[indexpath.row]
-      vc?.todo = todo
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
     
-    vc?.delegate = self
-    vc?.presentationController?.delegate = self
     
-    return vc
-  }
-  
-
+    @IBSegueAction func todoViewcontroller(_ coder: NSCoder, sender: Any?) -> ListViewController? {
+        let vc = ListViewController(coder: coder)
+            
+            if let indexpath = tableView.indexPathForSelectedRow {
+                let todo = todos[indexpath.row]
+                vc?.todo = todo
+            }
+            
+            vc?.delegate = self
+            vc?.presentationController?.delegate = self
+            
+            return vc
+        }
+    
+    
+    @IBSegueAction func todoViewcontroller0(_ coder: NSCoder, sender: Any?) -> ListViewController? {
+        let vc = ListViewController(coder: coder)
+            
+            if let indexpath = tableView.indexPathForSelectedRow {
+                let todo = todos[indexpath.row]
+                vc?.todo = todo
+            }
+            
+            vc?.delegate = self
+            vc?.presentationController?.delegate = self
+            
+            return vc
+    }
+    
+    
+    
+    
     @IBAction func onLogoutButton(_ sender: Any) {
         
         PFUser.logOut()
@@ -55,6 +69,7 @@ class HomePageViewController: UIViewController {
         delegate.window?.rootViewController = loginViewController
         
     }
+    
 }
 
 

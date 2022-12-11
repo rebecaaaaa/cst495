@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 protocol CheckTableViewCellDelegate: AnyObject {
   func checkTableViewCell(_ cell: CheckTableViewCell, didChangeCheckedState checked: Bool)
