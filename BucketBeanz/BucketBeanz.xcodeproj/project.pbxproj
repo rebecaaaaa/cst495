@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2C08662C1A95C7C3A7757FAD /* Pods_BucketBeanz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92BD90AC3617BE7DF035924 /* Pods_BucketBeanz.framework */; };
-		B720512F2941779100F2C987 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720512E2941779100F2C987 /* SwiftUIView.swift */; };
-		B7205131294185C700F2C987 /* CompletedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7205130294185C700F2C987 /* CompletedItems.swift */; };
-		B72051332941868000F2C987 /* MyBucketBeanzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72051322941868000F2C987 /* MyBucketBeanzViewController.swift */; };
+		B71E213D29455837000FB771 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E213C29455837000FB771 /* HomePageViewController.swift */; };
+		B71E214329455912000FB771 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E214229455912000FB771 /* ListViewController.swift */; };
+		B71E214529455954000FB771 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E214429455954000FB771 /* List.swift */; };
 		B720513529418F8100F2C987 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B720513429418F8100F2C987 /* Checkbox.swift */; };
 		B740FBFD291B1FDB00E58C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FBFC291B1FDB00E58C78 /* AppDelegate.swift */; };
 		B740FBFF291B1FDB00E58C78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FBFE291B1FDB00E58C78 /* SceneDelegate.swift */; };
@@ -21,9 +21,6 @@
 		B740FC1E291B1FDD00E58C78 /* BucketBeanzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FC1D291B1FDD00E58C78 /* BucketBeanzUITests.swift */; };
 		B740FC20291B1FDD00E58C78 /* BucketBeanzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FC1F291B1FDD00E58C78 /* BucketBeanzUITestsLaunchTests.swift */; };
 		B740FC2D291B248500E58C78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B740FC2C291B248500E58C78 /* LoginViewController.swift */; };
-		B74F4B72294036A300BBA938 /* CreateBucketBeanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74F4B71294036A300BBA938 /* CreateBucketBeanViewController.swift */; };
-		B76ADE18291DB97A00E23F03 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76ADE17291DB97A00E23F03 /* FeedViewController.swift */; };
-		B7AE44DF2941CD4F002AAD7E /* CompletedItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE44DE2941CD4F002AAD7E /* CompletedItemsViewController.swift */; };
 		B7C4DFF42941967000E36DC5 /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4DFF32941967000E36DC5 /* CheckTableViewCell.swift */; };
 		C268FA5CDC6FD9719622A6C5 /* Pods_BucketBeanz_BucketBeanzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B231BC0AF278266983E90CA3 /* Pods_BucketBeanz_BucketBeanzUITests.framework */; };
 		DC162F4E6C65E947D7EE5DBC /* Pods_BucketBeanzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7687F90BB87E938CCE0FC4DB /* Pods_BucketBeanzTests.framework */; };
@@ -52,9 +49,9 @@
 		7687F90BB87E938CCE0FC4DB /* Pods_BucketBeanzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BucketBeanzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A57AD1E4240FBC4ED83123D /* Pods-BucketBeanz-BucketBeanzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketBeanz-BucketBeanzUITests.debug.xcconfig"; path = "Target Support Files/Pods-BucketBeanz-BucketBeanzUITests/Pods-BucketBeanz-BucketBeanzUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B231BC0AF278266983E90CA3 /* Pods_BucketBeanz_BucketBeanzUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BucketBeanz_BucketBeanzUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B720512E2941779100F2C987 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		B7205130294185C700F2C987 /* CompletedItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedItems.swift; sourceTree = "<group>"; };
-		B72051322941868000F2C987 /* MyBucketBeanzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBucketBeanzViewController.swift; sourceTree = "<group>"; };
+		B71E213C29455837000FB771 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		B71E214229455912000FB771 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		B71E214429455954000FB771 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		B720513429418F8100F2C987 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		B740FBF9291B1FDB00E58C78 /* BucketBeanz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketBeanz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B740FBFC291B1FDB00E58C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,9 +66,6 @@
 		B740FC1D291B1FDD00E58C78 /* BucketBeanzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketBeanzUITests.swift; sourceTree = "<group>"; };
 		B740FC1F291B1FDD00E58C78 /* BucketBeanzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketBeanzUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B740FC2C291B248500E58C78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B74F4B71294036A300BBA938 /* CreateBucketBeanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBucketBeanViewController.swift; sourceTree = "<group>"; };
-		B76ADE17291DB97A00E23F03 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		B7AE44DE2941CD4F002AAD7E /* CompletedItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedItemsViewController.swift; sourceTree = "<group>"; };
 		B7C4DFF32941967000E36DC5 /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
 		B901A5E52626A4DC98A1B8BD /* Pods-BucketBeanz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketBeanz.debug.xcconfig"; path = "Target Support Files/Pods-BucketBeanz/Pods-BucketBeanz.debug.xcconfig"; sourceTree = "<group>"; };
 		C344353B8CD5745AF7F80D7C /* Pods-BucketBeanz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BucketBeanz.release.xcconfig"; path = "Target Support Files/Pods-BucketBeanz/Pods-BucketBeanz.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,14 +146,11 @@
 				B740FC07291B1FDD00E58C78 /* LaunchScreen.storyboard */,
 				B740FC0A291B1FDD00E58C78 /* Info.plist */,
 				B740FC2C291B248500E58C78 /* LoginViewController.swift */,
-				B76ADE17291DB97A00E23F03 /* FeedViewController.swift */,
-				B74F4B71294036A300BBA938 /* CreateBucketBeanViewController.swift */,
-				B720512E2941779100F2C987 /* SwiftUIView.swift */,
-				B7205130294185C700F2C987 /* CompletedItems.swift */,
-				B72051322941868000F2C987 /* MyBucketBeanzViewController.swift */,
 				B720513429418F8100F2C987 /* Checkbox.swift */,
 				B7C4DFF32941967000E36DC5 /* CheckTableViewCell.swift */,
-				B7AE44DE2941CD4F002AAD7E /* CompletedItemsViewController.swift */,
+				B71E213C29455837000FB771 /* HomePageViewController.swift */,
+				B71E214229455912000FB771 /* ListViewController.swift */,
+				B71E214429455954000FB771 /* List.swift */,
 			);
 			path = BucketBeanz;
 			sourceTree = "<group>";
@@ -449,16 +440,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B740FC2D291B248500E58C78 /* LoginViewController.swift in Sources */,
+				B71E214529455954000FB771 /* List.swift in Sources */,
 				B740FBFD291B1FDB00E58C78 /* AppDelegate.swift in Sources */,
+				B71E213D29455837000FB771 /* HomePageViewController.swift in Sources */,
 				B720513529418F8100F2C987 /* Checkbox.swift in Sources */,
-				B720512F2941779100F2C987 /* SwiftUIView.swift in Sources */,
-				B74F4B72294036A300BBA938 /* CreateBucketBeanViewController.swift in Sources */,
-				B76ADE18291DB97A00E23F03 /* FeedViewController.swift in Sources */,
 				B7C4DFF42941967000E36DC5 /* CheckTableViewCell.swift in Sources */,
-				B72051332941868000F2C987 /* MyBucketBeanzViewController.swift in Sources */,
 				B740FBFF291B1FDB00E58C78 /* SceneDelegate.swift in Sources */,
-				B7205131294185C700F2C987 /* CompletedItems.swift in Sources */,
-				B7AE44DF2941CD4F002AAD7E /* CompletedItemsViewController.swift in Sources */,
+				B71E214329455912000FB771 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
